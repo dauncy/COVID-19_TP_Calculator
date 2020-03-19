@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COVID-19 TP Calculator</title>
+</head>
+<body>
+    <h1>The Official Unofficial COVID-19 TP Calculator</h1>
+    <H4>Check to see how long you can isolate yourself for</H4>
+    <div style="display:none"
+        id="error">
+        <p>
+            Please fill out all of the information for an accurate estimate
+        </p>
+    </div>
+    <form id="tp-calculator">
+        <label>
+            How many Rolls do you have?
+        </label>
+        <br></br>
+        <input 
+            id="rolls"
+            type="number" />
+            <br></br>
+        <label> How many sheets per roll?</label>
+        <br></br>
+        <input 
+            id="sheets-per-roll"
+            type="number" />
+        <br></br>
+        <label>Avg. number of bathroom visits per day</label>
+        <br></br>
+        <input 
+            id="visits"
+            type='number' />
+            <br></br>
+        <label>Avg. number of wipes per visit</label>
+        <br></br>
+        <input 
+            id="wipes"
+            type="number" />
+        <br></br>
+        <label>Avg. number of sheets per wipe</label>
+        <br></br>
+        <input 
+            id="sheets-per-wipe"
+            type="number" />
+        <br></br>
+        <!-- <label>fudge factor (stickiness)</label>
+        <br></br>
+        not sticky<input type="range" min="1" max="100" value="50" class="slider" id="myRange">very sticky
+        <br></br> -->
+        <input 
+            type="submit" value="calculate"/>
+    </form>
+    <div
+        style="display:none"
+        id="results">
+        <h4 id="results-to-display">You're supply will last you x days in quarentine</h4>
+    </div
+    >
+    <script src="index.js"></script>
+</body>
+</html> 
